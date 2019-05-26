@@ -11,8 +11,8 @@ done
 PRGDIR=`dirname "$PRG"`
 if [ -z "$1" ]
 then
-   echo "apk_decompiler example;"
-   echo "usage: apk_decompiler [apk file]"
+   echo "startme.sh example"
+   echo "usage: startme.sh [apk file]"
 else
    "$PRGDIR/d2j-dex2jar.sh" $1  -o "$1.jar" 
     java -jar "$PRGDIR/cfr_0_115.jar" "$1.jar" --outputdir "$1.out"
